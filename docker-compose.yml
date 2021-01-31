@@ -1,8 +1,9 @@
 version: '2'
 services:
   proxy_pool:
-    # build: .
-    image: "jiyecafe/proxy_pool"
+    # 腾讯云轻量服务器需使用 image 方式
+    build: .
+    # image: "jiyecafe/proxy_pool"
     container_name: proxy_pool
     volumes:
       - .:/app
